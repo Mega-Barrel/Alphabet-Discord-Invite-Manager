@@ -3,7 +3,10 @@ const { Client, MessageEmbed } = require('discord.js');
 const client = new Discord.Client();
 const guildInvites = new Map();
 const fs = require('fs')
-const welcomeName = require('./config.json')
+
+// database connection
+const db = require('./database/db')
+// const welcomeName = require('./config.json')
 
 
 client.on('message', async message => {
